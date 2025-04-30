@@ -43,54 +43,49 @@
     <div class="product">
       <h3>فلتر زيت</h3>
       <p>فلتر زيت أصلي لجميع أنواع السيارات.</p>
-      <button>اطلب الآن</button>
+      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
     </div>
     <div class="product">
       <h3>بطارية</h3>
       <p>بطاريات عالية الجودة تدوم طويلاً.</p>
-      <button>اطلب الآن</button>
+      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
     </div>
     <div class="product">
       <h3>رديتر</h3>
       <p>رديترات مصممة لتحمّل درجات الحرارة العالية.</p>
-      <button>اطلب الآن</button>
+      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
     </div>
   </section>
 
   <section class="order" id="order">
     <h2>طلب شراء</h2>
     <form>
-      <input type="text" placeholder="الاسم الكامل" required>
-      <input type="tel" placeholder="رقم الهاتف" required>
-      <input type="text" placeholder="اسم القطعة المطلوبة" required>
-      <select required>
+      <input type="text" name="fullname" placeholder="الاسم الكامل" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <input type="text" name="part" placeholder="اسم القطعة المطلوبة" required>
+      <select name="payment" required>
         <option value="">اختر طريقة الدفع</option>
         <option value="الكريمي">بنك الكريمي</option>
         <option value="عند الاستلام">عند الاستلام</option>
       </select>
-      <textarea rows="4" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+      <textarea name="notes" rows="4" placeholder="ملاحظات إضافية (اختياري)"></textarea>
       <button type="submit">إرسال الطلب</button>
     </form>
   </section>
 
-  <form action="https://formspree.io/f/xwpovznk" method="POST">
-  <input type="text" name="name" placeholder="الاسم الكامل" required>
-  <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-  <textarea name="message" placeholder="رسالتك..." required></textarea>
-  <button type="submit">إرسال</button>
-</form>
+  <section class="contact" id="contact">
+    <h2>اتصل بنا</h2>
+    <form action="https://formspree.io/f/xwpovznk" method="POST">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك..." required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
 
   <footer>
     <p>جميع الحقوق محفوظة &copy; النجم الحديث 2025</p>
     <p>للتواصل: 776798168</p>
   </footer>
-</body><section class="contact" id="contact">
-  <h2>اتصل بنا</h2>
-  <form action="https://formspree.io/f/xwpovznk" method="POST">
-    <input type="text" name="name" placeholder="الاسم الكامل" required>
-    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-    <textarea name="message" placeholder="رسالتك..." required></textarea>
-    <button type="submit">إرسال</button>
-  </form>
-</section>
+</body>
 </html>
