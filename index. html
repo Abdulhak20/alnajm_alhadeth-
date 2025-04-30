@@ -73,15 +73,12 @@
     </form>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>اتصل بنا</h2>
-    <form>
-      <input type="text" placeholder="الاسم الكامل" required>
-      <input type="email" placeholder="البريد الإلكتروني" required>
-      <textarea rows="5" placeholder="رسالتك..." required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
-  </section>
+  <form action="https://formspree.io/f/xwpovznk" method="POST">
+  <input type="text" name="name" placeholder="الاسم الكامل" required>
+  <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+  <textarea name="message" placeholder="رسالتك..." required></textarea>
+  <button type="submit">إرسال</button>
+</form>
 
   <footer>
     <p>جميع الحقوق محفوظة &copy; النجم الحديث 2025</p>
