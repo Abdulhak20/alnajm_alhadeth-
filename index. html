@@ -43,23 +43,17 @@
     <div class="product">
       <h3>فلتر زيت</h3>
       <p>فلتر زيت أصلي لجميع أنواع السيارات.</p>
-      <a href="#order" style="text-decoration: none;">
-        <button>اطلب الآن</button>
-      </a>
+      <button onclick="fillOrder('فلتر زيت')">اطلب الآن</button>
     </div>
     <div class="product">
       <h3>بطارية</h3>
       <p>بطاريات عالية الجودة تدوم طويلاً.</p>
-      <a href="#order" style="text-decoration: none;">
-        <button>اطلب الآن</button>
-      </a>
+      <button onclick="fillOrder('بطارية')">اطلب الآن</button>
     </div>
     <div class="product">
       <h3>رديتر</h3>
       <p>رديترات مصممة لتحمّل درجات الحرارة العالية.</p>
-      <a href="#order" style="text-decoration: none;">
-        <button>اطلب الآن</button>
-      </a>
+      <button onclick="fillOrder('رديتر')">اطلب الآن</button>
     </div>
   </section>
 
@@ -93,5 +87,18 @@
     <p>جميع الحقوق محفوظة &copy; النجم الحديث 2025</p>
     <p>للتواصل: 776798168</p>
   </footer>
+
+  <script>
+    function fillOrder(partName) {
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        const partInput = document.querySelector('#order input[name="part"]');
+        if (partInput) {
+          partInput.value = partName;
+          partInput.focus();
+        }
+      }, 500);
+    }
+  </script>
 </body>
 </html>
