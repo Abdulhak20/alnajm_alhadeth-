@@ -43,17 +43,23 @@
     <div class="product">
       <h3>فلتر زيت</h3>
       <p>فلتر زيت أصلي لجميع أنواع السيارات.</p>
-      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
+      <a href="#order" style="text-decoration: none;">
+        <button>اطلب الآن</button>
+      </a>
     </div>
     <div class="product">
       <h3>بطارية</h3>
       <p>بطاريات عالية الجودة تدوم طويلاً.</p>
-      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
+      <a href="#order" style="text-decoration: none;">
+        <button>اطلب الآن</button>
+      </a>
     </div>
     <div class="product">
       <h3>رديتر</h3>
       <p>رديترات مصممة لتحمّل درجات الحرارة العالية.</p>
-      <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">اطلب الآن</button>
+      <a href="#order" style="text-decoration: none;">
+        <button>اطلب الآن</button>
+      </a>
     </div>
   </section>
 
